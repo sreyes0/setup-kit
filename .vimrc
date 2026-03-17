@@ -46,6 +46,13 @@ set laststatus=2
 set showmode
 set showcmd
 
+" Smart rules for indentation
+set smartindent
+
+" Change cursor depending on mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 " Highlight matches of last search pattern
 set hlsearch
 " Show pattern match as it's being typed
