@@ -58,4 +58,5 @@ set hlsearch
 " Show pattern match as it's being typed
 set incsearch
 
-
+" Add copying to clipboard (foot intercepts ctrl+shift+c)
+vnoremap <leader>c y:call system('wl-copy', @")<CR>
